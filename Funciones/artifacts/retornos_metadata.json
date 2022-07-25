@@ -1,0 +1,54 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "saludo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Funciones/retorno.sol": "retornos"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Funciones/retorno.sol": {
+			"keccak256": "0x0ae19a0e563bf17ffad859970451062b4e236a03c10ecc80c5830722b9ca6d74",
+			"urls": [
+				"bzz-raw://e3cb8416d37bf28c57ecf33ebcfbaa5a3868cc0c40fbf6da15942d62800ec58f",
+				"dweb:/ipfs/QmTV3A4aNAwv9ijvwz92W8cDCv9secxKDpp1WzwyLsJm4F"
+			]
+		}
+	},
+	"version": 1
+}

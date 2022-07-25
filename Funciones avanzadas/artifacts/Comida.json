@@ -1,0 +1,59 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220826c825939ab1c726dc2780b41b934e3f0963f43b7927cde57b299f8c6a8469b64736f6c63430006000033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DUP3 PUSH13 0x825939AB1C726DC2780B41B934 0xE3 CREATE SWAP7 EXTCODEHASH NUMBER 0xB7 SWAP3 PUSH29 0xDE57B299F8C6A8469B64736F6C63430006000033000000000000000000 ",
+			"sourceMap": "27:562:0:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:562:0;;;;;;;"
+		},
+		"deployedBytecode": {
+			"linkReferences": {},
+			"object": "6080604052600080fdfea2646970667358221220826c825939ab1c726dc2780b41b934e3f0963f43b7927cde57b299f8c6a8469b64736f6c63430006000033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DUP3 PUSH13 0x825939AB1C726DC2780B41B934 0xE3 CREATE SWAP7 EXTCODEHASH NUMBER 0xB7 SWAP3 PUSH29 0xDE57B299F8C6A8469B64736F6C63430006000033000000000000000000 ",
+			"sourceMap": "27:562:0:-:0;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "12600",
+				"executionCost": "66",
+				"totalCost": "12666"
+			},
+			"internal": {
+				"crearPlato(string memory,string memory,uint256)": "infinite",
+				"getIngredientes(string memory)": "infinite"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": []
+}

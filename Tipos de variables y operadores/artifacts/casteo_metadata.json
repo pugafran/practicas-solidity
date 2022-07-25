@@ -1,0 +1,67 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "casteo_a",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "casteo_c",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Tipos de variables y operadores/casteo.sol": "casteo"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Tipos de variables y operadores/casteo.sol": {
+			"keccak256": "0xa35f4b9020084cba3df4ef397dc50a422bf47d32087df666b3b62efc3003801b",
+			"urls": [
+				"bzz-raw://792c8adc72ff1be12fd3793ff109a1c65fbdb4f4d3f9df440c611399b9606179",
+				"dweb:/ipfs/QmWMmLygqAm8KC2BPtkbMbw6THWVbdjQ5n9JsdieXwBAeH"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,40 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Funciones/retorno.sol": "retornmos"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Funciones/retorno.sol": {
+			"keccak256": "0x30d14e924953ff47c45aeac3ddb5cde8325bac4fd7cd020baca537bf817b7ccd",
+			"urls": [
+				"bzz-raw://d0b4996c992beed32e1fc072b45008c385d329cdc46159f637ab50dc9adb902d",
+				"dweb:/ipfs/QmVXhbBd93noVwwHuhEUsENBWiWcj9EjsqNVQ9cYC3kGPA"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,338 @@
+{
+	"id": "ac1cdf0ed85d5310961f397a562aafaa",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.0",
+	"solcLongVersion": "0.8.0+commit.c7dfd78e",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Primeros pasos en Solidity/ejemplo.sol": {
+				"content": "pragma solidity > 0.5.0 <= 0.8.0;\r\n//pragma solidity ^0.8.0\r\n\r\ncontract contrato {\r\n\r\n    \r\n}\r\n\r\n\r\n\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Primeros pasos en Solidity/ejemplo.sol": {
+				"contrato": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"Primeros pasos en Solidity/ejemplo.sol\":63:93  contract contrato {\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Primeros pasos en Solidity/ejemplo.sol\":63:93  contract contrato {\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212201b4a6ed0be75c7b7622cbac92c43c489eb88a5fef64fd3c5a7bb199d97c0880d64736f6c63430008000033\n}\n",
+						"bytecode": {
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212201b4a6ed0be75c7b7622cbac92c43c489eb88a5fef64fd3c5a7bb199d97c0880d64736f6c63430008000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SHL 0x4A PUSH15 0xD0BE75C7B7622CBAC92C43C489EB88 0xA5 INVALID 0xF6 0x4F 0xD3 0xC5 0xA7 0xBB NOT SWAP14 SWAP8 0xC0 DUP9 0xD PUSH5 0x736F6C6343 STOP ADDMOD STOP STOP CALLER ",
+							"sourceMap": "63:30:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212201b4a6ed0be75c7b7622cbac92c43c489eb88a5fef64fd3c5a7bb199d97c0880d64736f6c63430008000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SHL 0x4A PUSH15 0xD0BE75C7B7622CBAC92C43C489EB88 0xA5 INVALID 0xF6 0x4F 0xD3 0xC5 0xA7 0xBB NOT SWAP14 SWAP8 0xC0 DUP9 0xD PUSH5 0x736F6C6343 STOP ADDMOD STOP STOP CALLER ",
+							"sourceMap": "63:30:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 63,
+									"end": 93,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212201b4a6ed0be75c7b7622cbac92c43c489eb88a5fef64fd3c5a7bb199d97c0880d64736f6c63430008000033",
+									".code": [
+										{
+											"begin": 63,
+											"end": 93,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 63,
+											"end": 93,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 63,
+											"end": 93,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 63,
+											"end": 93,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 63,
+											"end": 93,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 63,
+											"end": 93,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"Primeros pasos en Solidity/ejemplo.sol\":\"contrato\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Primeros pasos en Solidity/ejemplo.sol\":{\"keccak256\":\"0xd144d20ae641409f5a87f04d1ec30ab89e73f0212e12a2b9cccb04a5972fd0bb\",\"urls\":[\"bzz-raw://dd3c1e1c01b18f3e8fd8ef937366b41ef3929aecc281aadfeac7603b1105fca0\",\"dweb:/ipfs/QmWoiSfBibRrSjwW4i2V6YPwZkJ7i9Z4DLYhDq1DFKz77k\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> Primeros pasos en Solidity/ejemplo.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "Primeros pasos en Solidity/ejemplo.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"Primeros pasos en Solidity/ejemplo.sol": {
+				"ast": {
+					"absolutePath": "Primeros pasos en Solidity/ejemplo.sol",
+					"exportedSymbols": {
+						"contrato": [
+							2
+						]
+					},
+					"id": 3,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">",
+								"0.5",
+								".0",
+								"<=",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:33:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "contrato",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "63:30:0"
+						}
+					],
+					"src": "0:101:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

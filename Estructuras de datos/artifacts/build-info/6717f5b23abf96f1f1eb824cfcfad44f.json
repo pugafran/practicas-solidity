@@ -1,0 +1,76 @@
+{
+	"id": "6717f5b23abf96f1f1eb824cfcfad44f",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.0",
+	"solcLongVersion": "0.6.0+commit.26b70077",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Estructuras de datos/arrays.sol": {
+				"content": "pragma solidity ^0.6.0;\r\npragma experimental ABIEncoderV2;\r\n\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"Estructuras de datos/arrays.sol": {
+				"ast": {
+					"absolutePath": "Estructuras de datos/arrays.sol",
+					"exportedSymbols": {},
+					"id": 3,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.6",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:23:0"
+						},
+						{
+							"id": 2,
+							"literals": [
+								"experimental",
+								"ABIEncoderV2"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "25:33:0"
+						}
+					],
+					"src": "0:62:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

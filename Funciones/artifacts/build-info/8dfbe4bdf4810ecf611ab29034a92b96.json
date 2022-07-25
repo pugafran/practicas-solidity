@@ -1,0 +1,296 @@
+{
+	"id": "8dfbe4bdf4810ecf611ab29034a92b96",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.0",
+	"solcLongVersion": "0.6.0+commit.26b70077",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Funciones/eventos.sol": {
+				"content": "pragma solidity ^0.6.0;\r\npragma experimental ABIEncoderV2;\r\n\r\ncontract Eventos{\r\n    \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Funciones/eventos.sol": {
+				"Eventos": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Funciones/eventos.sol\":62:88  contract Eventos{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x00\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"Funciones/eventos.sol\":62:88  contract Eventos{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Funciones/eventos.sol\":62:88  contract Eventos{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212204ab950a533e52659c86138a8bd26497fc7fed8b93cce954d10ea8ac51c93085264736f6c63430006000033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212204ab950a533e52659c86138a8bd26497fc7fed8b93cce954d10ea8ac51c93085264736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x4A 0xB9 POP 0xA5 CALLER 0xE5 0x26 MSIZE 0xC8 PUSH2 0x38A8 0xBD 0x26 0x49 PUSH32 0xC7FED8B93CCE954D10EA8AC51C93085264736F6C634300060000330000000000 ",
+							"sourceMap": "62:26:0:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;62:26:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212204ab950a533e52659c86138a8bd26497fc7fed8b93cce954d10ea8ac51c93085264736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x4A 0xB9 POP 0xA5 CALLER 0xE5 0x26 MSIZE 0xC8 PUSH2 0x38A8 0xBD 0x26 0x49 PUSH32 0xC7FED8B93CCE954D10EA8AC51C93085264736F6C634300060000330000000000 ",
+							"sourceMap": "62:26:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 62,
+									"end": 88,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 62,
+									"end": 88,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 62,
+									"end": 88,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 62,
+									"end": 88,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 62,
+									"end": 88,
+									"name": "POP"
+								},
+								{
+									"begin": 62,
+									"end": 88,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 88,
+									"name": "DUP1"
+								},
+								{
+									"begin": 62,
+									"end": 88,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 88,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 88,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 62,
+									"end": 88,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 88,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212204ab950a533e52659c86138a8bd26497fc7fed8b93cce954d10ea8ac51c93085264736f6c63430006000033",
+									".code": [
+										{
+											"begin": 62,
+											"end": 88,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 62,
+											"end": 88,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 62,
+											"end": 88,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 62,
+											"end": 88,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 62,
+											"end": 88,
+											"name": "DUP1"
+										},
+										{
+											"begin": 62,
+											"end": 88,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Funciones/eventos.sol\":\"Eventos\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Funciones/eventos.sol\":{\"keccak256\":\"0x45df04f5c8542f5785ac4b752f738c5074926c19f8804e960994643387fe7eb2\",\"urls\":[\"bzz-raw://1835fa984189ef4078b4527a9a25e91b060a2c2b3a17e691b113b169c8e88c8a\",\"dweb:/ipfs/QmPG9xAQGCmvYp4hVFQ9SYWWa36QzkJPah5BAeeG8QYc9K\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"Funciones/eventos.sol": {
+				"ast": {
+					"absolutePath": "Funciones/eventos.sol",
+					"exportedSymbols": {
+						"Eventos": [
+							3
+						]
+					},
+					"id": 4,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.6",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:23:0"
+						},
+						{
+							"id": 2,
+							"literals": [
+								"experimental",
+								"ABIEncoderV2"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "25:33:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 3,
+							"linearizedBaseContracts": [
+								3
+							],
+							"name": "Eventos",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 4,
+							"src": "62:26:0"
+						}
+					],
+					"src": "0:88:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

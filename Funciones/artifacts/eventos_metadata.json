@@ -1,0 +1,153 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_nombrePersona",
+						"type": "string"
+					}
+				],
+				"name": "eventito",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_nombrePersona",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "edad",
+						"type": "uint256"
+					}
+				],
+				"name": "eventito2",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "eventito3",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombrePersona",
+						"type": "string"
+					}
+				],
+				"name": "EmitirEvento",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombrePersona",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_edad",
+						"type": "uint256"
+					}
+				],
+				"name": "EmitirEvento2",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombrePersona",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_edad",
+						"type": "uint256"
+					}
+				],
+				"name": "EmitirEvento3",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Funciones/eventos.sol": "Eventos"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Funciones/eventos.sol": {
+			"keccak256": "0x49be756846325f7b3628f5153b8df61f6ba7e93219607cbfb44cbbf02ca12847",
+			"urls": [
+				"bzz-raw://9277c8fd7f83648d8af4e29d1df8e1602f1afd7b7e1d4aa414eb38b99660c982",
+				"dweb:/ipfs/QmUGqEbhCxFQYVKxfogCVRxKjejykJzFyYMwd3y12E3Wu9"
+			]
+		}
+	},
+	"version": 1
+}

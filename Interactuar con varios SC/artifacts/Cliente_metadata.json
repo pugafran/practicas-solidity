@@ -1,0 +1,138 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "altaCliente",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "clientes",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "drieccion",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dinero",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "crearCliente",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cantidad",
+						"type": "uint256"
+					}
+				],
+				"name": "ingresarDinero",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cantidad",
+						"type": "uint256"
+					}
+				],
+				"name": "retirarDinero",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Interactuar con varios SC/herencia.sol": "Cliente"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Interactuar con varios SC/herencia.sol": {
+			"keccak256": "0x7cf1ca1fed14d07e08e92e78d3fddebae2ba15f8e886ff48d720c57524aee9c8",
+			"urls": [
+				"bzz-raw://9d18d627c24dd08baac773caa30d16423f67969adb15c350cf3a8a07eb562a81",
+				"dweb:/ipfs/QmadBLrRQjhtMtJR34yQ6maBmmtEJ6L5KjFeKwNu4Q1Fm7"
+			]
+		}
+	},
+	"version": 1
+}

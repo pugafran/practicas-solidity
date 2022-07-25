@@ -1,0 +1,140 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "consultarMapping",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "elegirNumero",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "dni",
+						"type": "uint256"
+					}
+				],
+				"name": "getPersona",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "nombre",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "edad",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct mappings.Persona",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numero",
+						"type": "uint256"
+					}
+				],
+				"name": "insertar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_DNI",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_edad",
+						"type": "uint256"
+					}
+				],
+				"name": "setDNI",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Estructuras de datos/mapping.sol": "mappings"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Estructuras de datos/mapping.sol": {
+			"keccak256": "0x92eae5a884585762ce15ae071805f214b329e04faacd4682234eb0fa40a9684f",
+			"urls": [
+				"bzz-raw://7d19beae4cb084a9ba7bbbedc85371d024a10cb5c259bfac393380598954a5e8",
+				"dweb:/ipfs/Qmdvem21RD3NScy3dDrZxQA712SRhQjc94yq7egJsXHGBz"
+			]
+		}
+	},
+	"version": 1
+}

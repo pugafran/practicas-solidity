@@ -1,0 +1,107 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "comprobar_causa",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_precio_objetivo",
+						"type": "uint256"
+					}
+				],
+				"name": "crearCausa",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cantidad",
+						"type": "uint256"
+					}
+				],
+				"name": "donar",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Funciones/ong.sol": "CausasBeneficas"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Funciones/ong.sol": {
+			"keccak256": "0x8eca744715d10c41a9e4e9f66e29ee610ffb18dd1136eae85c06c92993495716",
+			"urls": [
+				"bzz-raw://bc492947aeb380307e0c5584cdb7edfb8343f3a9f2af3c73a3127a12ed10bf87",
+				"dweb:/ipfs/QmYbjpJJErfqdXDc79VGh8DZGPYJNvJRPj293wYQLCFBtH"
+			]
+		}
+	},
+	"version": 1
+}

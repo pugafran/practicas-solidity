@@ -1,0 +1,67 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "addAdress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "direcciones",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Funciones/funciones.sol": "funciones"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Funciones/funciones.sol": {
+			"keccak256": "0x240f3e1a9f599844bf81f3885c908f2d64de5d54bc199456875f4c2b773092a5",
+			"urls": [
+				"bzz-raw://6733dc8e52d50f3f95784b42243a57aaa8ed55f67c1ed244cfd202640d282fc7",
+				"dweb:/ipfs/QmZs23ZNF4yj4VVQuaHSKakqLTi7rjeMHhzYsdPAiXfKde"
+			]
+		}
+	},
+	"version": 1
+}

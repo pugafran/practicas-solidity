@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ingredientes",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tiempo",
+						"type": "uint256"
+					}
+				],
+				"name": "crearSandwich",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getIngredientes",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Funciones avanzadas/internal_external.sol": "Sandwich"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Funciones avanzadas/internal_external.sol": {
+			"keccak256": "0x2952edcc5ff3d691ef3815375eca8b3a24d931b7f45ba6cab45c62902da2ec8f",
+			"urls": [
+				"bzz-raw://c5ddb554a452cb9dfcea7fade2eb0a0f4741ffe5faa00b035cec851ee085e5b5",
+				"dweb:/ipfs/QmdGhsRdXzohGQia4fuJFsNZ5pn5sTryGiWgaA27Jr4AN8"
+			]
+		}
+	},
+	"version": 1
+}

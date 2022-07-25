@@ -1,0 +1,353 @@
+{
+	"id": "9d7c087f17700bf7394daf7541179842",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.0",
+	"solcLongVersion": "0.6.0+commit.26b70077",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Estructuras de datos/estructuras.sol": {
+				"content": "pragma solidity ^0.6.0;\r\n\r\ncontract uwu{\r\n\r\n    struct cliente{\r\n\r\n        uint id;\r\n        string nombre;\r\n\r\n    }\r\n\r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Estructuras de datos/estructuras.sol": {
+				"uwu": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Estructuras de datos/estructuras.sol\":27:123  contract uwu{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x00\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"Estructuras de datos/estructuras.sol\":27:123  contract uwu{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Estructuras de datos/estructuras.sol\":27:123  contract uwu{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212207a6fc42dfe92bcca40f5cebabd681b34446814a016ee8c0df0625eb60e25f10164736f6c63430006000033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212207a6fc42dfe92bcca40f5cebabd681b34446814a016ee8c0df0625eb60e25f10164736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH27 0x6FC42DFE92BCCA40F5CEBABD681B34446814A016EE8C0DF0625EB6 0xE 0x25 CALL ADD PUSH5 0x736F6C6343 STOP MOD STOP STOP CALLER ",
+							"sourceMap": "27:96:0:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:96:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212207a6fc42dfe92bcca40f5cebabd681b34446814a016ee8c0df0625eb60e25f10164736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH27 0x6FC42DFE92BCCA40F5CEBABD681B34446814A016EE8C0DF0625EB6 0xE 0x25 CALL ADD PUSH5 0x736F6C6343 STOP MOD STOP STOP CALLER ",
+							"sourceMap": "27:96:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 27,
+									"end": 123,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 27,
+									"end": 123,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 27,
+									"end": 123,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 27,
+									"end": 123,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 27,
+									"end": 123,
+									"name": "POP"
+								},
+								{
+									"begin": 27,
+									"end": 123,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 27,
+									"end": 123,
+									"name": "DUP1"
+								},
+								{
+									"begin": 27,
+									"end": 123,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 27,
+									"end": 123,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 123,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 27,
+									"end": 123,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 123,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212207a6fc42dfe92bcca40f5cebabd681b34446814a016ee8c0df0625eb60e25f10164736f6c63430006000033",
+									".code": [
+										{
+											"begin": 27,
+											"end": 123,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 27,
+											"end": 123,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 27,
+											"end": 123,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 27,
+											"end": 123,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 27,
+											"end": 123,
+											"name": "DUP1"
+										},
+										{
+											"begin": 27,
+											"end": 123,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Estructuras de datos/estructuras.sol\":\"uwu\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Estructuras de datos/estructuras.sol\":{\"keccak256\":\"0x1b72cfaf3875268f5b06a0d65b6c9d6bdb3040f7c1d5d0ed31ad9b5e9f6e706f\",\"urls\":[\"bzz-raw://a103547fa2c84c08212eb1a1e0a108730f185dd814e4a6cb8f5a011e8580a898\",\"dweb:/ipfs/QmeLQe6xdY9gHzi14PR1W3zPy6TKkpH7u75Ucn9k3HgDAe\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"Estructuras de datos/estructuras.sol": {
+				"ast": {
+					"absolutePath": "Estructuras de datos/estructuras.sol",
+					"exportedSymbols": {
+						"uwu": [
+							7
+						]
+					},
+					"id": 8,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.6",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 7,
+							"linearizedBaseContracts": [
+								7
+							],
+							"name": "uwu",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "uwu.cliente",
+									"id": 6,
+									"members": [
+										{
+											"constant": false,
+											"id": 3,
+											"name": "id",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 6,
+											"src": "75:7:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 2,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "75:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 5,
+											"name": "nombre",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 6,
+											"src": "93:13:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 4,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "93:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										}
+									],
+									"name": "cliente",
+									"nodeType": "StructDefinition",
+									"scope": 7,
+									"src": "48:68:0",
+									"visibility": "public"
+								}
+							],
+							"scope": 8,
+							"src": "27:96:0"
+						}
+					],
+					"src": "0:123:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "encender",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getEstado",
+				"outputs": [
+					{
+						"internalType": "enum ejemplos_enumeraciones.estado",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_k",
+						"type": "uint256"
+					}
+				],
+				"name": "setEstado",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Tipos de variables y operadores/enums.sol": "ejemplos_enumeraciones"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Tipos de variables y operadores/enums.sol": {
+			"keccak256": "0x37c238d20072100194739a7b9b1b13846580d6bf08af1d0eb8d56c8192491394",
+			"urls": [
+				"bzz-raw://b1829e4e49633c9aed84d53073f6fb7c7f0c7235df2e226d1c50946b7f7fbe55",
+				"dweb:/ipfs/QmcXhT6zJ7niSWatjnCuB6cvLoiTtNmq6jEwBjNm3VFuKc"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ingredientes",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tiempo",
+						"type": "uint256"
+					}
+				],
+				"name": "crearSandwitch",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Funciones avanzadas/internal_external.sol": "Sandwitch"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Funciones avanzadas/internal_external.sol": {
+			"keccak256": "0xbec216a22bf23eca6a58e594d0f66a927915f4bdbb57ce1c20a5a9365a6c0518",
+			"urls": [
+				"bzz-raw://d23a2f5a976208eefdba388493dd4f4087f84268220982b097bbb8aeecd7caff",
+				"dweb:/ipfs/QmetmJEHoUtU3XfEmfH6KQqGrTb1cZhJWGytba8PE5SJg5"
+			]
+		}
+	},
+	"version": 1
+}

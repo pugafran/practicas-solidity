@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_precio_objetivo",
+						"type": "uint256"
+					}
+				],
+				"name": "crearCausa",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Funciones/ong.sol": "Causas_beneficas"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Funciones/ong.sol": {
+			"keccak256": "0x727985304fb87acaa9030f999777be845a3484371f4309fbac87fc2b2bc999c7",
+			"urls": [
+				"bzz-raw://fa5e50eb7679bb7f8ec29ceefa41b22cd24768b507735c7277a572fef67a6757",
+				"dweb:/ipfs/QmfHPT5UQn3L5LP5jSQb6iu7RyqcFpsfamedBNkQgANGP7"
+			]
+		}
+	},
+	"version": 1
+}

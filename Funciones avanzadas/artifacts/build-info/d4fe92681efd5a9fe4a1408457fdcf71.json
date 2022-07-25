@@ -1,0 +1,1327 @@
+{
+	"id": "d4fe92681efd5a9fe4a1408457fdcf71",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.0",
+	"solcLongVersion": "0.6.0+commit.26b70077",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Funciones avanzadas/internal_external.sol": {
+				"content": "pragma solidity ^0.6.0;\r\n\r\ncontract Comida{\r\n\r\n    struct plato{\r\n        string nombre;\r\n        string ingredientes;\r\n        uint tiempo;\r\n    }\r\n\r\n    plato [] platos;\r\n    \r\n    mapping(string => string) ingredientes;\r\n\r\n    function crearPlato(string memory _nombre, string memory _ingredientes, uint _tiempo) internal {\r\n\r\n        platos.push(plato(_nombre,_ingredientes,_tiempo));\r\n        ingredientes[_nombre] = _ingredientes;\r\n\r\n    }\r\n    function getIngredientes(string memory _nombre) internal view returns(string memory){\r\n\r\n        return ingredientes[_nombre];\r\n    }\r\n\r\n}\r\n\r\ncontract Sandwitch is Comida{\r\n\r\n}\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Funciones avanzadas/internal_external.sol": {
+				"Comida": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Funciones avanzadas/internal_external.sol\":27:589  contract Comida{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x00\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"Funciones avanzadas/internal_external.sol\":27:589  contract Comida{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Funciones avanzadas/internal_external.sol\":27:589  contract Comida{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220ab5ecb9ee265d002e727311aebb5892389e4c03463f3f19b0b0746bffc4144a864736f6c63430006000033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220ab5ecb9ee265d002e727311aebb5892389e4c03463f3f19b0b0746bffc4144a864736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xAB 0x5E 0xCB SWAP15 0xE2 PUSH6 0xD002E727311A 0xEB 0xB5 DUP10 0x23 DUP10 0xE4 0xC0 CALLVALUE PUSH4 0xF3F19B0B SMOD CHAINID 0xBF 0xFC COINBASE DIFFICULTY 0xA8 PUSH5 0x736F6C6343 STOP MOD STOP STOP CALLER ",
+							"sourceMap": "27:562:0:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:562:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220ab5ecb9ee265d002e727311aebb5892389e4c03463f3f19b0b0746bffc4144a864736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xAB 0x5E 0xCB SWAP15 0xE2 PUSH6 0xD002E727311A 0xEB 0xB5 DUP10 0x23 DUP10 0xE4 0xC0 CALLVALUE PUSH4 0xF3F19B0B SMOD CHAINID 0xBF 0xFC COINBASE DIFFICULTY 0xA8 PUSH5 0x736F6C6343 STOP MOD STOP STOP CALLER ",
+							"sourceMap": "27:562:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							},
+							"internal": {
+								"crearPlato(string memory,string memory,uint256)": "infinite",
+								"getIngredientes(string memory)": "infinite"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 27,
+									"end": 589,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 27,
+									"end": 589,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 27,
+									"end": 589,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 27,
+									"end": 589,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 27,
+									"end": 589,
+									"name": "POP"
+								},
+								{
+									"begin": 27,
+									"end": 589,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 27,
+									"end": 589,
+									"name": "DUP1"
+								},
+								{
+									"begin": 27,
+									"end": 589,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 27,
+									"end": 589,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 589,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 27,
+									"end": 589,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 589,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220ab5ecb9ee265d002e727311aebb5892389e4c03463f3f19b0b0746bffc4144a864736f6c63430006000033",
+									".code": [
+										{
+											"begin": 27,
+											"end": 589,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 27,
+											"end": 589,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 27,
+											"end": 589,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 27,
+											"end": 589,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 27,
+											"end": 589,
+											"name": "DUP1"
+										},
+										{
+											"begin": 27,
+											"end": 589,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Funciones avanzadas/internal_external.sol\":\"Comida\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Funciones avanzadas/internal_external.sol\":{\"keccak256\":\"0x50cb913a20fdafb2a8c6b6b3525300f4c6db84ed7ec8c79f38c6514c5bd177a0\",\"urls\":[\"bzz-raw://ed1b4de8f388bcaf8334450abbcc7c7d58e58edb7fa5a9654088d61aa0748781\",\"dweb:/ipfs/QmPraBEgy3tgypd237PeJvMos4ssjQVXVHx3afkeJV6DL3\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 11,
+								"contract": "Funciones avanzadas/internal_external.sol:Comida",
+								"label": "platos",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_array(t_struct(plato)8_storage)dyn_storage"
+							},
+							{
+								"astId": 15,
+								"contract": "Funciones avanzadas/internal_external.sol:Comida",
+								"label": "ingredientes",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_mapping(t_string_memory,t_string_storage)"
+							}
+						],
+						"types": {
+							"t_array(t_struct(plato)8_storage)dyn_storage": {
+								"base": "t_struct(plato)8_storage",
+								"encoding": "dynamic_array",
+								"label": "struct Comida.plato[]",
+								"numberOfBytes": "32"
+							},
+							"t_mapping(t_string_memory,t_string_storage)": {
+								"encoding": "mapping",
+								"key": "t_string_memory",
+								"label": "mapping(string => string)",
+								"numberOfBytes": "32",
+								"value": "t_string_storage"
+							},
+							"t_string_memory": {
+								"encoding": "bytes",
+								"label": "string",
+								"numberOfBytes": "32"
+							},
+							"t_string_storage": {
+								"encoding": "bytes",
+								"label": "string",
+								"numberOfBytes": "32"
+							},
+							"t_struct(plato)8_storage": {
+								"encoding": "inplace",
+								"label": "struct Comida.plato",
+								"members": [
+									{
+										"astId": 3,
+										"contract": "Funciones avanzadas/internal_external.sol:Comida",
+										"label": "nombre",
+										"offset": 0,
+										"slot": "0",
+										"type": "t_string_storage"
+									},
+									{
+										"astId": 5,
+										"contract": "Funciones avanzadas/internal_external.sol:Comida",
+										"label": "ingredientes",
+										"offset": 0,
+										"slot": "1",
+										"type": "t_string_storage"
+									},
+									{
+										"astId": 7,
+										"contract": "Funciones avanzadas/internal_external.sol:Comida",
+										"label": "tiempo",
+										"offset": 0,
+										"slot": "2",
+										"type": "t_uint256"
+									}
+								],
+								"numberOfBytes": "96"
+							},
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				},
+				"Sandwitch": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Funciones avanzadas/internal_external.sol\":593:627  contract Sandwitch is Comida{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x00\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"Funciones avanzadas/internal_external.sol\":593:627  contract Sandwitch is Comida{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Funciones avanzadas/internal_external.sol\":593:627  contract Sandwitch is Comida{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220806777e98dac8cec34cbde65144f264f301a198fa0e33df61ce9b58f3d90a13464736f6c63430006000033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220806777e98dac8cec34cbde65144f264f301a198fa0e33df61ce9b58f3d90a13464736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DUP1 PUSH8 0x77E98DAC8CEC34CB 0xDE PUSH6 0x144F264F301A NOT DUP16 LOG0 0xE3 RETURNDATASIZE 0xF6 SHR 0xE9 0xB5 DUP16 RETURNDATASIZE SWAP1 LOG1 CALLVALUE PUSH5 0x736F6C6343 STOP MOD STOP STOP CALLER ",
+							"sourceMap": "593:34:0:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;593:34:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220806777e98dac8cec34cbde65144f264f301a198fa0e33df61ce9b58f3d90a13464736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DUP1 PUSH8 0x77E98DAC8CEC34CB 0xDE PUSH6 0x144F264F301A NOT DUP16 LOG0 0xE3 RETURNDATASIZE 0xF6 SHR 0xE9 0xB5 DUP16 RETURNDATASIZE SWAP1 LOG1 CALLVALUE PUSH5 0x736F6C6343 STOP MOD STOP STOP CALLER ",
+							"sourceMap": "593:34:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 593,
+									"end": 627,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 593,
+									"end": 627,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 593,
+									"end": 627,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 593,
+									"end": 627,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 593,
+									"end": 627,
+									"name": "POP"
+								},
+								{
+									"begin": 593,
+									"end": 627,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 593,
+									"end": 627,
+									"name": "DUP1"
+								},
+								{
+									"begin": 593,
+									"end": 627,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 593,
+									"end": 627,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 593,
+									"end": 627,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 593,
+									"end": 627,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 593,
+									"end": 627,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220806777e98dac8cec34cbde65144f264f301a198fa0e33df61ce9b58f3d90a13464736f6c63430006000033",
+									".code": [
+										{
+											"begin": 593,
+											"end": 627,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 593,
+											"end": 627,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 593,
+											"end": 627,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 593,
+											"end": 627,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 593,
+											"end": 627,
+											"name": "DUP1"
+										},
+										{
+											"begin": 593,
+											"end": 627,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Funciones avanzadas/internal_external.sol\":\"Sandwitch\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Funciones avanzadas/internal_external.sol\":{\"keccak256\":\"0x50cb913a20fdafb2a8c6b6b3525300f4c6db84ed7ec8c79f38c6514c5bd177a0\",\"urls\":[\"bzz-raw://ed1b4de8f388bcaf8334450abbcc7c7d58e58edb7fa5a9654088d61aa0748781\",\"dweb:/ipfs/QmPraBEgy3tgypd237PeJvMos4ssjQVXVHx3afkeJV6DL3\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 11,
+								"contract": "Funciones avanzadas/internal_external.sol:Sandwitch",
+								"label": "platos",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_array(t_struct(plato)8_storage)dyn_storage"
+							},
+							{
+								"astId": 15,
+								"contract": "Funciones avanzadas/internal_external.sol:Sandwitch",
+								"label": "ingredientes",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_mapping(t_string_memory,t_string_storage)"
+							}
+						],
+						"types": {
+							"t_array(t_struct(plato)8_storage)dyn_storage": {
+								"base": "t_struct(plato)8_storage",
+								"encoding": "dynamic_array",
+								"label": "struct Comida.plato[]",
+								"numberOfBytes": "32"
+							},
+							"t_mapping(t_string_memory,t_string_storage)": {
+								"encoding": "mapping",
+								"key": "t_string_memory",
+								"label": "mapping(string => string)",
+								"numberOfBytes": "32",
+								"value": "t_string_storage"
+							},
+							"t_string_memory": {
+								"encoding": "bytes",
+								"label": "string",
+								"numberOfBytes": "32"
+							},
+							"t_string_storage": {
+								"encoding": "bytes",
+								"label": "string",
+								"numberOfBytes": "32"
+							},
+							"t_struct(plato)8_storage": {
+								"encoding": "inplace",
+								"label": "struct Comida.plato",
+								"members": [
+									{
+										"astId": 3,
+										"contract": "Funciones avanzadas/internal_external.sol:Sandwitch",
+										"label": "nombre",
+										"offset": 0,
+										"slot": "0",
+										"type": "t_string_storage"
+									},
+									{
+										"astId": 5,
+										"contract": "Funciones avanzadas/internal_external.sol:Sandwitch",
+										"label": "ingredientes",
+										"offset": 0,
+										"slot": "1",
+										"type": "t_string_storage"
+									},
+									{
+										"astId": 7,
+										"contract": "Funciones avanzadas/internal_external.sol:Sandwitch",
+										"label": "tiempo",
+										"offset": 0,
+										"slot": "2",
+										"type": "t_uint256"
+									}
+								],
+								"numberOfBytes": "96"
+							},
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"Funciones avanzadas/internal_external.sol": {
+				"ast": {
+					"absolutePath": "Funciones avanzadas/internal_external.sol",
+					"exportedSymbols": {
+						"Comida": [
+							54
+						],
+						"Sandwitch": [
+							57
+						]
+					},
+					"id": 58,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.6",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 54,
+							"linearizedBaseContracts": [
+								54
+							],
+							"name": "Comida",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "Comida.plato",
+									"id": 8,
+									"members": [
+										{
+											"constant": false,
+											"id": 3,
+											"name": "nombre",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 8,
+											"src": "74:13:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 2,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "74:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 5,
+											"name": "ingredientes",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 8,
+											"src": "98:19:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 4,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "98:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 7,
+											"name": "tiempo",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 8,
+											"src": "128:11:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 6,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "128:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										}
+									],
+									"name": "plato",
+									"nodeType": "StructDefinition",
+									"scope": 54,
+									"src": "51:96:0",
+									"visibility": "public"
+								},
+								{
+									"constant": false,
+									"id": 11,
+									"name": "platos",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 54,
+									"src": "155:15:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_array$_t_struct$_plato_$8_storage_$dyn_storage",
+										"typeString": "struct Comida.plato[]"
+									},
+									"typeName": {
+										"baseType": {
+											"contractScope": null,
+											"id": 9,
+											"name": "plato",
+											"nodeType": "UserDefinedTypeName",
+											"referencedDeclaration": 8,
+											"src": "155:5:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_struct$_plato_$8_storage_ptr",
+												"typeString": "struct Comida.plato"
+											}
+										},
+										"id": 10,
+										"length": null,
+										"nodeType": "ArrayTypeName",
+										"src": "155:8:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_array$_t_struct$_plato_$8_storage_$dyn_storage_ptr",
+											"typeString": "struct Comida.plato[]"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 15,
+									"name": "ingredientes",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 54,
+									"src": "183:38:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_mapping$_t_string_memory_$_t_string_storage_$",
+										"typeString": "mapping(string => string)"
+									},
+									"typeName": {
+										"id": 14,
+										"keyType": {
+											"id": 12,
+											"name": "string",
+											"nodeType": "ElementaryTypeName",
+											"src": "191:6:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											}
+										},
+										"nodeType": "Mapping",
+										"src": "183:25:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_mapping$_t_string_memory_$_t_string_storage_$",
+											"typeString": "mapping(string => string)"
+										},
+										"valueType": {
+											"id": 13,
+											"name": "string",
+											"nodeType": "ElementaryTypeName",
+											"src": "201:6:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											}
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"body": {
+										"id": 40,
+										"nodeType": "Block",
+										"src": "325:120:0",
+										"statements": [
+											{
+												"expression": {
+													"argumentTypes": null,
+													"arguments": [
+														{
+															"argumentTypes": null,
+															"arguments": [
+																{
+																	"argumentTypes": null,
+																	"id": 28,
+																	"name": "_nombre",
+																	"nodeType": "Identifier",
+																	"overloadedDeclarations": [],
+																	"referencedDeclaration": 17,
+																	"src": "356:7:0",
+																	"typeDescriptions": {
+																		"typeIdentifier": "t_string_memory_ptr",
+																		"typeString": "string memory"
+																	}
+																},
+																{
+																	"argumentTypes": null,
+																	"id": 29,
+																	"name": "_ingredientes",
+																	"nodeType": "Identifier",
+																	"overloadedDeclarations": [],
+																	"referencedDeclaration": 19,
+																	"src": "364:13:0",
+																	"typeDescriptions": {
+																		"typeIdentifier": "t_string_memory_ptr",
+																		"typeString": "string memory"
+																	}
+																},
+																{
+																	"argumentTypes": null,
+																	"id": 30,
+																	"name": "_tiempo",
+																	"nodeType": "Identifier",
+																	"overloadedDeclarations": [],
+																	"referencedDeclaration": 21,
+																	"src": "378:7:0",
+																	"typeDescriptions": {
+																		"typeIdentifier": "t_uint256",
+																		"typeString": "uint256"
+																	}
+																}
+															],
+															"expression": {
+																"argumentTypes": [
+																	{
+																		"typeIdentifier": "t_string_memory_ptr",
+																		"typeString": "string memory"
+																	},
+																	{
+																		"typeIdentifier": "t_string_memory_ptr",
+																		"typeString": "string memory"
+																	},
+																	{
+																		"typeIdentifier": "t_uint256",
+																		"typeString": "uint256"
+																	}
+																],
+																"id": 27,
+																"name": "plato",
+																"nodeType": "Identifier",
+																"overloadedDeclarations": [],
+																"referencedDeclaration": 8,
+																"src": "350:5:0",
+																"typeDescriptions": {
+																	"typeIdentifier": "t_type$_t_struct$_plato_$8_storage_ptr_$",
+																	"typeString": "type(struct Comida.plato storage pointer)"
+																}
+															},
+															"id": 31,
+															"isConstant": false,
+															"isLValue": false,
+															"isPure": false,
+															"kind": "structConstructorCall",
+															"lValueRequested": false,
+															"names": [],
+															"nodeType": "FunctionCall",
+															"src": "350:36:0",
+															"tryCall": false,
+															"typeDescriptions": {
+																"typeIdentifier": "t_struct$_plato_$8_memory",
+																"typeString": "struct Comida.plato memory"
+															}
+														}
+													],
+													"expression": {
+														"argumentTypes": [
+															{
+																"typeIdentifier": "t_struct$_plato_$8_memory",
+																"typeString": "struct Comida.plato memory"
+															}
+														],
+														"expression": {
+															"argumentTypes": null,
+															"id": 24,
+															"name": "platos",
+															"nodeType": "Identifier",
+															"overloadedDeclarations": [],
+															"referencedDeclaration": 11,
+															"src": "338:6:0",
+															"typeDescriptions": {
+																"typeIdentifier": "t_array$_t_struct$_plato_$8_storage_$dyn_storage",
+																"typeString": "struct Comida.plato storage ref[] storage ref"
+															}
+														},
+														"id": 26,
+														"isConstant": false,
+														"isLValue": false,
+														"isPure": false,
+														"lValueRequested": false,
+														"memberName": "push",
+														"nodeType": "MemberAccess",
+														"referencedDeclaration": null,
+														"src": "338:11:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_plato_$8_storage_$returns$__$",
+															"typeString": "function (struct Comida.plato storage ref)"
+														}
+													},
+													"id": 32,
+													"isConstant": false,
+													"isLValue": false,
+													"isPure": false,
+													"kind": "functionCall",
+													"lValueRequested": false,
+													"names": [],
+													"nodeType": "FunctionCall",
+													"src": "338:49:0",
+													"tryCall": false,
+													"typeDescriptions": {
+														"typeIdentifier": "t_tuple$__$",
+														"typeString": "tuple()"
+													}
+												},
+												"id": 33,
+												"nodeType": "ExpressionStatement",
+												"src": "338:49:0"
+											},
+											{
+												"expression": {
+													"argumentTypes": null,
+													"id": 38,
+													"isConstant": false,
+													"isLValue": false,
+													"isPure": false,
+													"lValueRequested": false,
+													"leftHandSide": {
+														"argumentTypes": null,
+														"baseExpression": {
+															"argumentTypes": null,
+															"id": 34,
+															"name": "ingredientes",
+															"nodeType": "Identifier",
+															"overloadedDeclarations": [],
+															"referencedDeclaration": 15,
+															"src": "398:12:0",
+															"typeDescriptions": {
+																"typeIdentifier": "t_mapping$_t_string_memory_$_t_string_storage_$",
+																"typeString": "mapping(string memory => string storage ref)"
+															}
+														},
+														"id": 36,
+														"indexExpression": {
+															"argumentTypes": null,
+															"id": 35,
+															"name": "_nombre",
+															"nodeType": "Identifier",
+															"overloadedDeclarations": [],
+															"referencedDeclaration": 17,
+															"src": "411:7:0",
+															"typeDescriptions": {
+																"typeIdentifier": "t_string_memory_ptr",
+																"typeString": "string memory"
+															}
+														},
+														"isConstant": false,
+														"isLValue": true,
+														"isPure": false,
+														"lValueRequested": true,
+														"nodeType": "IndexAccess",
+														"src": "398:21:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_string_storage",
+															"typeString": "string storage ref"
+														}
+													},
+													"nodeType": "Assignment",
+													"operator": "=",
+													"rightHandSide": {
+														"argumentTypes": null,
+														"id": 37,
+														"name": "_ingredientes",
+														"nodeType": "Identifier",
+														"overloadedDeclarations": [],
+														"referencedDeclaration": 19,
+														"src": "422:13:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_string_memory_ptr",
+															"typeString": "string memory"
+														}
+													},
+													"src": "398:37:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage",
+														"typeString": "string storage ref"
+													}
+												},
+												"id": 39,
+												"nodeType": "ExpressionStatement",
+												"src": "398:37:0"
+											}
+										]
+									},
+									"documentation": null,
+									"id": 41,
+									"implemented": true,
+									"kind": "function",
+									"modifiers": [],
+									"name": "crearPlato",
+									"nodeType": "FunctionDefinition",
+									"overrides": null,
+									"parameters": {
+										"id": 22,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 17,
+												"name": "_nombre",
+												"nodeType": "VariableDeclaration",
+												"overrides": null,
+												"scope": 41,
+												"src": "250:21:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_memory_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 16,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "250:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 19,
+												"name": "_ingredientes",
+												"nodeType": "VariableDeclaration",
+												"overrides": null,
+												"scope": 41,
+												"src": "273:27:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_memory_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 18,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "273:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 21,
+												"name": "_tiempo",
+												"nodeType": "VariableDeclaration",
+												"overrides": null,
+												"scope": 41,
+												"src": "302:12:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 20,
+													"name": "uint",
+													"nodeType": "ElementaryTypeName",
+													"src": "302:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "249:66:0"
+									},
+									"returnParameters": {
+										"id": 23,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "325:0:0"
+									},
+									"scope": 54,
+									"src": "230:215:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "internal"
+								},
+								{
+									"body": {
+										"id": 52,
+										"nodeType": "Block",
+										"src": "535:49:0",
+										"statements": [
+											{
+												"expression": {
+													"argumentTypes": null,
+													"baseExpression": {
+														"argumentTypes": null,
+														"id": 48,
+														"name": "ingredientes",
+														"nodeType": "Identifier",
+														"overloadedDeclarations": [],
+														"referencedDeclaration": 15,
+														"src": "555:12:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_mapping$_t_string_memory_$_t_string_storage_$",
+															"typeString": "mapping(string memory => string storage ref)"
+														}
+													},
+													"id": 50,
+													"indexExpression": {
+														"argumentTypes": null,
+														"id": 49,
+														"name": "_nombre",
+														"nodeType": "Identifier",
+														"overloadedDeclarations": [],
+														"referencedDeclaration": 43,
+														"src": "568:7:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_string_memory_ptr",
+															"typeString": "string memory"
+														}
+													},
+													"isConstant": false,
+													"isLValue": true,
+													"isPure": false,
+													"lValueRequested": false,
+													"nodeType": "IndexAccess",
+													"src": "555:21:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage",
+														"typeString": "string storage ref"
+													}
+												},
+												"functionReturnParameters": 47,
+												"id": 51,
+												"nodeType": "Return",
+												"src": "548:28:0"
+											}
+										]
+									},
+									"documentation": null,
+									"id": 53,
+									"implemented": true,
+									"kind": "function",
+									"modifiers": [],
+									"name": "getIngredientes",
+									"nodeType": "FunctionDefinition",
+									"overrides": null,
+									"parameters": {
+										"id": 44,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 43,
+												"name": "_nombre",
+												"nodeType": "VariableDeclaration",
+												"overrides": null,
+												"scope": 53,
+												"src": "476:21:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_memory_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 42,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "476:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "475:23:0"
+									},
+									"returnParameters": {
+										"id": 47,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 46,
+												"name": "",
+												"nodeType": "VariableDeclaration",
+												"overrides": null,
+												"scope": 53,
+												"src": "521:13:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_memory_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 45,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "521:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "520:15:0"
+									},
+									"scope": 54,
+									"src": "451:133:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "internal"
+								}
+							],
+							"scope": 58,
+							"src": "27:562:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [
+								{
+									"arguments": null,
+									"baseName": {
+										"contractScope": null,
+										"id": 55,
+										"name": "Comida",
+										"nodeType": "UserDefinedTypeName",
+										"referencedDeclaration": 54,
+										"src": "615:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_contract$_Comida_$54",
+											"typeString": "contract Comida"
+										}
+									},
+									"id": 56,
+									"nodeType": "InheritanceSpecifier",
+									"src": "615:6:0"
+								}
+							],
+							"contractDependencies": [
+								54
+							],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 57,
+							"linearizedBaseContracts": [
+								57,
+								54
+							],
+							"name": "Sandwitch",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 58,
+							"src": "593:34:0"
+						}
+					],
+					"src": "0:629:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

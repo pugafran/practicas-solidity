@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Primeros pasos en Solidity/ejemplo.sol": "contrato"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Primeros pasos en Solidity/ejemplo.sol": {
+			"keccak256": "0xb183e40ea41fc2fbb43f3386d53ba83d26457e1e34411d0bed6cdb241432328c",
+			"urls": [
+				"bzz-raw://3cd50ceab60bf6f8cbc6f5395310c055bc060c9b93f7d69181f5baf49f260316",
+				"dweb:/ipfs/QmU2JhjHgYNkfmqGNifoKMRYVs8i6JXEvW8ajgAchXyQC3"
+			]
+		}
+	},
+	"version": 1
+}

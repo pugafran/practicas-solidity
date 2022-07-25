@@ -1,0 +1,491 @@
+{
+	"id": "ecd71c87475063a17a4c335796abae33",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.0",
+	"solcLongVersion": "0.6.0+commit.26b70077",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Funciones/ong.sol": {
+				"content": "pragma solidity ^0.6.0;\r\npragma experimental ABIEncoderV2;\r\n\r\ncontract causas_beneficas{\r\n\r\n    struct Causa{\r\n        uint id;\r\n        string name;\r\n        uint precio_objetivo;\r\n        uint cantidad_recaudada;\r\n    }\r\n\r\n    uint contador_causas = 0;\r\n\r\n    \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Funciones/ong.sol": {
+				"causas_beneficas": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Funciones/ong.sol\":62:265  contract causas_beneficas{\r... */\n  mstore(0x40, 0x80)\n    /* \"Funciones/ong.sol\":252:253  0 */\n  0x00\n    /* \"Funciones/ong.sol\":229:253  uint contador_causas = 0 */\n  dup1\n  sstore\n    /* \"Funciones/ong.sol\":62:265  contract causas_beneficas{\r... */\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x00\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"Funciones/ong.sol\":62:265  contract causas_beneficas{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Funciones/ong.sol\":62:265  contract causas_beneficas{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220f7bfee15ea62a59b76a78b7f9f2b709857cc928409dfd4f02421add39a00904064736f6c63430006000033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "608060405260008055348015601357600080fd5b50603f8060216000396000f3fe6080604052600080fdfea2646970667358221220f7bfee15ea62a59b76a78b7f9f2b709857cc928409dfd4f02421add39a00904064736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 SSTORE CALLVALUE DUP1 ISZERO PUSH1 0x13 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x21 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xF7 0xBF 0xEE ISZERO 0xEA PUSH3 0xA59B76 0xA7 DUP12 PUSH32 0x9F2B709857CC928409DFD4F02421ADD39A00904064736F6C6343000600003300 ",
+							"sourceMap": "62:203:0:-:0;;;252:1;229:24;;62:203;8:9:-1;5:2;;;30:1;27;20:12;5:2;62:203:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220f7bfee15ea62a59b76a78b7f9f2b709857cc928409dfd4f02421add39a00904064736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xF7 0xBF 0xEE ISZERO 0xEA PUSH3 0xA59B76 0xA7 DUP12 PUSH32 0x9F2B709857CC928409DFD4F02421ADD39A00904064736F6C6343000600003300 ",
+							"sourceMap": "62:203:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "5072",
+								"totalCost": "17672"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 62,
+									"end": 265,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 62,
+									"end": 265,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 62,
+									"end": 265,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 252,
+									"end": 253,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 229,
+									"end": 253,
+									"name": "DUP1"
+								},
+								{
+									"begin": 229,
+									"end": 253,
+									"name": "SSTORE"
+								},
+								{
+									"begin": 62,
+									"end": 265,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 62,
+									"end": 265,
+									"name": "POP"
+								},
+								{
+									"begin": 62,
+									"end": 265,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 265,
+									"name": "DUP1"
+								},
+								{
+									"begin": 62,
+									"end": 265,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 265,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 265,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 62,
+									"end": 265,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 265,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220f7bfee15ea62a59b76a78b7f9f2b709857cc928409dfd4f02421add39a00904064736f6c63430006000033",
+									".code": [
+										{
+											"begin": 62,
+											"end": 265,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 62,
+											"end": 265,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 62,
+											"end": 265,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 62,
+											"end": 265,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 62,
+											"end": 265,
+											"name": "DUP1"
+										},
+										{
+											"begin": 62,
+											"end": 265,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Funciones/ong.sol\":\"causas_beneficas\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Funciones/ong.sol\":{\"keccak256\":\"0xaab91d8291a2dd4a53d68f9000aeb62c95aae2a3078090f84a2eeabec6e801f8\",\"urls\":[\"bzz-raw://53df9dbc6a32806dda8714c6dad6359f8688ad62bafd35a5f362160f85a62be4\",\"dweb:/ipfs/QmdZ2DyRjMCmEocPvbPWAj4cVd7U4D3AChRg1CQLHFmBpN\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 14,
+								"contract": "Funciones/ong.sol:causas_beneficas",
+								"label": "contador_causas",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_uint256"
+							}
+						],
+						"types": {
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"Funciones/ong.sol": {
+				"ast": {
+					"absolutePath": "Funciones/ong.sol",
+					"exportedSymbols": {
+						"causas_beneficas": [
+							15
+						]
+					},
+					"id": 16,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.6",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:23:0"
+						},
+						{
+							"id": 2,
+							"literals": [
+								"experimental",
+								"ABIEncoderV2"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "25:33:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 15,
+							"linearizedBaseContracts": [
+								15
+							],
+							"name": "causas_beneficas",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "causas_beneficas.Causa",
+									"id": 11,
+									"members": [
+										{
+											"constant": false,
+											"id": 4,
+											"name": "id",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 11,
+											"src": "119:7:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 3,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "119:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 6,
+											"name": "name",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 11,
+											"src": "137:11:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 5,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "137:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 8,
+											"name": "precio_objetivo",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 11,
+											"src": "159:20:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 7,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "159:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 10,
+											"name": "cantidad_recaudada",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 11,
+											"src": "190:23:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 9,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "190:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										}
+									],
+									"name": "Causa",
+									"nodeType": "StructDefinition",
+									"scope": 15,
+									"src": "96:125:0",
+									"visibility": "public"
+								},
+								{
+									"constant": false,
+									"id": 14,
+									"name": "contador_causas",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 15,
+									"src": "229:24:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 12,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "229:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"value": {
+										"argumentTypes": null,
+										"hexValue": "30",
+										"id": 13,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "number",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "252:1:0",
+										"subdenomination": null,
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_0_by_1",
+											"typeString": "int_const 0"
+										},
+										"value": "0"
+									},
+									"visibility": "internal"
+								}
+							],
+							"scope": 16,
+							"src": "62:203:0"
+						}
+					],
+					"src": "0:265:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

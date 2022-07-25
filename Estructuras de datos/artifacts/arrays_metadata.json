@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "setX",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "vectorcito_dinamico",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Estructuras de datos/arrays.sol": "arrays"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Estructuras de datos/arrays.sol": {
+			"keccak256": "0xdb4a3b36bc9e1b82351c2ba5524e3648d7522155e32142a996e2f29ae362ec92",
+			"urls": [
+				"bzz-raw://988390c3a3c314d775d840d79fa37022dffa445db852b5b1763c507df8aeb545",
+				"dweb:/ipfs/QmPDtCbvohY9kg2zugtqbe3NVq5XdDtiqbiUGuQ2qJvTET"
+			]
+		}
+	},
+	"version": 1
+}

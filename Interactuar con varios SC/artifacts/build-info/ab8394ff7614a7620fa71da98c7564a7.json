@@ -1,0 +1,69 @@
+{
+	"id": "ab8394ff7614a7620fa71da98c7564a7",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.0",
+	"solcLongVersion": "0.6.0+commit.26b70077",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Interactuar con varios SC/interfaz.sol": {
+				"content": ""
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"formattedMessage": "Interactuar con varios SC/interfaz.sol:1:1: Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.6.0;\"\n\n^\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.6.0;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 0,
+					"file": "Interactuar con varios SC/interfaz.sol",
+					"start": 0
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"Interactuar con varios SC/interfaz.sol": {
+				"ast": {
+					"absolutePath": "Interactuar con varios SC/interfaz.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "0:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

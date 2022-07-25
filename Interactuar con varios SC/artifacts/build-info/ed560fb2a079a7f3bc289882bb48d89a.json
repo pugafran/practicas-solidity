@@ -1,0 +1,390 @@
+{
+	"id": "ed560fb2a079a7f3bc289882bb48d89a",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.0",
+	"solcLongVersion": "0.6.0+commit.26b70077",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Interactuar con varios SC/herencia.sol": {
+				"content": "pragma solidity ^0.6.0;\r\npragma experimental ABIEncoderV2;\r\n\r\ncontract Banco{\r\n\r\n    struct cliente{\r\n        string _nombre;\r\n        address drieccion;\r\n        uint dinero;\r\n    }\r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Interactuar con varios SC/herencia.sol": {
+				"Banco": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Interactuar con varios SC/herencia.sol\":62:187  contract Banco{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x00\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"Interactuar con varios SC/herencia.sol\":62:187  contract Banco{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Interactuar con varios SC/herencia.sol\":62:187  contract Banco{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212205874cfa1d468f454e4138f0d5bfa47bd27a8d508bb39eceac42a2735cc5a035d64736f6c63430006000033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212205874cfa1d468f454e4138f0d5bfa47bd27a8d508bb39eceac42a2735cc5a035d64736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PC PUSH21 0xCFA1D468F454E4138F0D5BFA47BD27A8D508BB39EC 0xEA 0xC4 0x2A 0x27 CALLDATALOAD 0xCC GAS SUB 0x5D PUSH5 0x736F6C6343 STOP MOD STOP STOP CALLER ",
+							"sourceMap": "62:125:0:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;62:125:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212205874cfa1d468f454e4138f0d5bfa47bd27a8d508bb39eceac42a2735cc5a035d64736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PC PUSH21 0xCFA1D468F454E4138F0D5BFA47BD27A8D508BB39EC 0xEA 0xC4 0x2A 0x27 CALLDATALOAD 0xCC GAS SUB 0x5D PUSH5 0x736F6C6343 STOP MOD STOP STOP CALLER ",
+							"sourceMap": "62:125:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 62,
+									"end": 187,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 62,
+									"end": 187,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 62,
+									"end": 187,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 62,
+									"end": 187,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 62,
+									"end": 187,
+									"name": "POP"
+								},
+								{
+									"begin": 62,
+									"end": 187,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 187,
+									"name": "DUP1"
+								},
+								{
+									"begin": 62,
+									"end": 187,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 187,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 187,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 62,
+									"end": 187,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 187,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212205874cfa1d468f454e4138f0d5bfa47bd27a8d508bb39eceac42a2735cc5a035d64736f6c63430006000033",
+									".code": [
+										{
+											"begin": 62,
+											"end": 187,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 62,
+											"end": 187,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 62,
+											"end": 187,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 62,
+											"end": 187,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 62,
+											"end": 187,
+											"name": "DUP1"
+										},
+										{
+											"begin": 62,
+											"end": 187,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Interactuar con varios SC/herencia.sol\":\"Banco\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Interactuar con varios SC/herencia.sol\":{\"keccak256\":\"0xf1e19696c4f3ddfb0bf95eb7681cd5592b3723673db0026535f70ada22d9c013\",\"urls\":[\"bzz-raw://88a10e6700e607a1bdd950666fef979c4e7b1c80b7c5baf6f443b6f7de5de3db\",\"dweb:/ipfs/QmQegTVMfWNFkcs6fv63FEPAzonMSWXwgsWLCc5emQwiGE\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"Interactuar con varios SC/herencia.sol": {
+				"ast": {
+					"absolutePath": "Interactuar con varios SC/herencia.sol",
+					"exportedSymbols": {
+						"Banco": [
+							10
+						]
+					},
+					"id": 11,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.6",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:23:0"
+						},
+						{
+							"id": 2,
+							"literals": [
+								"experimental",
+								"ABIEncoderV2"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "25:33:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 10,
+							"linearizedBaseContracts": [
+								10
+							],
+							"name": "Banco",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "Banco.cliente",
+									"id": 9,
+									"members": [
+										{
+											"constant": false,
+											"id": 4,
+											"name": "_nombre",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 9,
+											"src": "110:14:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 3,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "110:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 6,
+											"name": "drieccion",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 9,
+											"src": "135:17:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_address",
+												"typeString": "address"
+											},
+											"typeName": {
+												"id": 5,
+												"name": "address",
+												"nodeType": "ElementaryTypeName",
+												"src": "135:7:0",
+												"stateMutability": "nonpayable",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 8,
+											"name": "dinero",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 9,
+											"src": "163:11:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 7,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "163:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										}
+									],
+									"name": "cliente",
+									"nodeType": "StructDefinition",
+									"scope": 10,
+									"src": "85:97:0",
+									"visibility": "public"
+								}
+							],
+							"scope": 11,
+							"src": "62:125:0"
+						}
+					],
+					"src": "0:187:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

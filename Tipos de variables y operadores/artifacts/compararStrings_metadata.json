@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_a",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_b",
+						"type": "string"
+					}
+				],
+				"name": "comparar",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Tipos de variables y operadores/comparar_strings.sol": "compararStrings"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Tipos de variables y operadores/comparar_strings.sol": {
+			"keccak256": "0xa6990b8d186d70cf16627f4843c85e816adfdce0d8696a757fac8b6873d5928b",
+			"urls": [
+				"bzz-raw://b6b0c5f7f6e9cc45fe9fa48c8ec30be18e847388a16e2cc5d8192f0fc59cc22e",
+				"dweb:/ipfs/QmY8vaVif94AmqcBz4KMQBiMVENM9UdnLUzUjjYWnJtKQi"
+			]
+		}
+	},
+	"version": 1
+}

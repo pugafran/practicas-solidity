@@ -1,0 +1,92 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "cartera",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "cantidad",
+						"type": "uint256"
+					}
+				],
+				"name": "pagar",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "pass",
+						"type": "string"
+					}
+				],
+				"name": "password",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Funciones avanzadas/require.sol": "Require"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Funciones avanzadas/require.sol": {
+			"keccak256": "0x33e57cce66e8d4a0ee6eb5747adf5e8fb94667da8ed0614efd12e8cb808b63e8",
+			"urls": [
+				"bzz-raw://9146b27c1064f21a0606034995273772ab1ca82ad9ea52572293abb4c88ac462",
+				"dweb:/ipfs/QmQ6vtwuMwXuH4qMiqfLhp9ZUh2L1fPt7CMhTnBXuNpgn8"
+			]
+		}
+	},
+	"version": 1
+}

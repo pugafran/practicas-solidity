@@ -1,0 +1,296 @@
+{
+	"id": "20c9c27037d064c44c3e8fcb55b1d658",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.0",
+	"solcLongVersion": "0.6.0+commit.26b70077",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Interactuar con varios SC/herencia.sol": {
+				"content": "pragma solidity ^0.6.0;\r\npragma experimental ABIEncoderV2;\r\n\r\ncontract Banco{\r\n    \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Interactuar con varios SC/herencia.sol": {
+				"Banco": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Interactuar con varios SC/herencia.sol\":62:86  contract Banco{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x00\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"Interactuar con varios SC/herencia.sol\":62:86  contract Banco{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Interactuar con varios SC/herencia.sol\":62:86  contract Banco{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212208b6189a5dbca9edadd9bbe411def84ced63222f04bf0ce81395df52c4a6a457c64736f6c63430006000033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212208b6189a5dbca9edadd9bbe411def84ced63222f04bf0ce81395df52c4a6a457c64736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DUP12 PUSH2 0x89A5 0xDB 0xCA SWAP15 0xDA 0xDD SWAP12 0xBE COINBASE SAR 0xEF DUP5 0xCE 0xD6 ORIGIN 0x22 CREATE 0x4B CREATE 0xCE DUP2 CODECOPY 0x5D CREATE2 0x2C 0x4A PUSH11 0x457C64736F6C6343000600 STOP CALLER ",
+							"sourceMap": "62:24:0:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;62:24:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212208b6189a5dbca9edadd9bbe411def84ced63222f04bf0ce81395df52c4a6a457c64736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DUP12 PUSH2 0x89A5 0xDB 0xCA SWAP15 0xDA 0xDD SWAP12 0xBE COINBASE SAR 0xEF DUP5 0xCE 0xD6 ORIGIN 0x22 CREATE 0x4B CREATE 0xCE DUP2 CODECOPY 0x5D CREATE2 0x2C 0x4A PUSH11 0x457C64736F6C6343000600 STOP CALLER ",
+							"sourceMap": "62:24:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 62,
+									"end": 86,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 62,
+									"end": 86,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 62,
+									"end": 86,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 62,
+									"end": 86,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 62,
+									"end": 86,
+									"name": "POP"
+								},
+								{
+									"begin": 62,
+									"end": 86,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 86,
+									"name": "DUP1"
+								},
+								{
+									"begin": 62,
+									"end": 86,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 86,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 86,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 62,
+									"end": 86,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 86,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212208b6189a5dbca9edadd9bbe411def84ced63222f04bf0ce81395df52c4a6a457c64736f6c63430006000033",
+									".code": [
+										{
+											"begin": 62,
+											"end": 86,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 62,
+											"end": 86,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 62,
+											"end": 86,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 62,
+											"end": 86,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 62,
+											"end": 86,
+											"name": "DUP1"
+										},
+										{
+											"begin": 62,
+											"end": 86,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Interactuar con varios SC/herencia.sol\":\"Banco\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Interactuar con varios SC/herencia.sol\":{\"keccak256\":\"0xd79f25bdb50fceb8b8cc1e6b7ef9b3e2a1baf5b148bf53eca5128a5db04e1787\",\"urls\":[\"bzz-raw://e79c88236128f0a45cd48126286104f48b95b0ae8c3494fc3cfddddadb2375a2\",\"dweb:/ipfs/QmeMW17Uv5DDV7NYSfCa5iaEEdx6wNLZrKTbTogcebinQ1\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"Interactuar con varios SC/herencia.sol": {
+				"ast": {
+					"absolutePath": "Interactuar con varios SC/herencia.sol",
+					"exportedSymbols": {
+						"Banco": [
+							3
+						]
+					},
+					"id": 4,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.6",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:23:0"
+						},
+						{
+							"id": 2,
+							"literals": [
+								"experimental",
+								"ABIEncoderV2"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "25:33:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 3,
+							"linearizedBaseContracts": [
+								3
+							],
+							"name": "Banco",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 4,
+							"src": "62:24:0"
+						}
+					],
+					"src": "0:86:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
