@@ -12,6 +12,6 @@ contract arrays{
 function setX (uint x) public{
     vectorcito_dinamico.push(x);
 }
-
+    
 
  }
