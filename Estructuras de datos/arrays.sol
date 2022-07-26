@@ -11,6 +11,7 @@ contract arrays{
 
 function setX (uint x) public{
     vectorcito_dinamico.push(x);
+    require(x > 10, "El número debe ser mayor de 10");
 }
     
 
