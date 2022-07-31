@@ -1,0 +1,120 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_b",
+						"type": "uint256"
+					}
+				],
+				"name": "dividir",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_b",
+						"type": "uint256"
+					}
+				],
+				"name": "resta",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_b",
+						"type": "uint256"
+					}
+				],
+				"name": "suma",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SafeMath/ejemplos.sol": "CalculoSeguro"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SafeMath/SafeMath.sol": {
+			"keccak256": "0x7a187c7031248663ae674cb56acdcea47099c2fa4fde49f91679b14b004e1ce0",
+			"urls": [
+				"bzz-raw://5f48576ad6b6ece288d6df1241d22503330c86696f2fb719e61205b2fbc34a8e",
+				"dweb:/ipfs/QmYqDwsCFkEZ9UusAZvLReiRCU1UV8GQ8bzHgeRmCVkSAJ"
+			]
+		},
+		"SafeMath/ejemplos.sol": {
+			"keccak256": "0x0126475e5b4e9fc11149a09e89a89caacdc550635d2696c1959d6f5d3a942bb6",
+			"urls": [
+				"bzz-raw://0436a0bd55838c98bd52b3abd88bf328d4e6154bf52572b9348bdbaacb389405",
+				"dweb:/ipfs/QmWnqNi1Ab3GwLeqJEy8KqWLdbHW9Bh8NE8Hz5TzymA22f"
+			]
+		}
+	},
+	"version": 1
+}

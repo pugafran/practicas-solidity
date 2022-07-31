@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "profesor",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Sistema de evaluacion\\notas.sol": "notas"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Sistema de evaluacion\\notas.sol": {
+			"keccak256": "0x9d8ca952721ead0533b65aef2bbf925ce5453b461c0c93282e5b3876b076ba5d",
+			"urls": [
+				"bzz-raw://d93c9ea5f1074992c0259afc3417d4ab1c362bd67db1755d9c828ee725c6b307",
+				"dweb:/ipfs/QmdxH6jM6Y6W1VDE2To65mKxVVFVgyq6a3SLYZLw7mQYtd"
+			]
+		}
+	},
+	"version": 1
+}
